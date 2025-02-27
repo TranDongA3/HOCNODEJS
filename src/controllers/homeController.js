@@ -4,7 +4,7 @@ let getHomePage= async(req,res)=>{
         let data=await db.User.findAll();
         
         return res.render("homepage.ejs",{
-            data: JSON.stringify(data)
+            data: data
         })
         
     } catch (error) {
